@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 375px;
+    height: 709px;
+    background: #E0E8FF;
+}
+
+.container {
+    width: 327px;
+    height: 567px;
+    border-radius: 20px;
+    background: #FFFFFF;
+}
+
+.inner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 567px;
+}
+
+.img-container {
+    width: 327px;
+    height: 160px;
+    border-radius: 20px;
+    background: url(images/illustration-hero.svg);
+    background-size: cover;
+}
