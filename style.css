@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    max-height: 100vh;
 }
 
 body {
@@ -15,8 +16,6 @@ body {
 }
 
 .container {
-    width: 327px;
-    height: 567px;
     border-radius: 20px;
     background: #FFFFFF;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
@@ -27,11 +26,12 @@ body {
     flex-direction: column;
     align-items: center;
     height: 567px;
+    width: 327px;
 }
 
 .img-container {
     width: 327px;
-    height: 160px;
+    min-height: 160px;
     border-radius: 20px 20px 0 0;
     background: url(images/illustration-hero.svg);
     background-size: cover;
@@ -77,6 +77,15 @@ body {
     font-weight: 900;
 }
 
+.music-card-container a:hover {
+    color: #766CF1;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 .music-card-container p {
     margin: 0;
     font-size: 14px;
@@ -109,6 +118,17 @@ body {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
+.payment-button:hover {
+    background-color: #766CF1;
+}
+
+.payment-button a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 19.85px;
+}
+
 .payment-button h2 {
     font-weight: 900;
     font-size: 15px;
@@ -124,13 +144,19 @@ body {
     cursor: pointer;
 }
 
-@media only screen and (min-width:375) {
+.cancel-button p:hover {
+    color: #766CF1;
+}
+
+@media only screen and (min-width:375px) {
     body {
+        width: 1440px;
+        height: 800px;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 1440px;
-        height: 900px;
+        height: 100vh;
         max-width: 100%;
+        background: #E0E8FF;
     }
 }
