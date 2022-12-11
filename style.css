@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Red+Hat+Display:ital,wght@0,700;0,900;1,500&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +11,7 @@ body {
     width: 375px;
     height: 709px;
     background: #E0E8FF;
+    font-family: 'Red Hat Display', sans-serif;
 }
 
 .container {
@@ -17,6 +19,7 @@ body {
     height: 567px;
     border-radius: 20px;
     background: #FFFFFF;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .inner-container {
@@ -29,7 +32,105 @@ body {
 .img-container {
     width: 327px;
     height: 160px;
-    border-radius: 20px;
+    border-radius: 20px 20px 0 0;
     background: url(images/illustration-hero.svg);
     background-size: cover;
+}
+
+.inner-container h1 {
+    margin-top: 24px;
+    font-weight: 900;
+    font-size: 22px;
+    color: #1F2E55;
+}
+
+.inner-container p {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 500;
+    color: #717FA6;
+}
+
+.music-card-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 279px;
+    height: 81px;
+    border-radius: 11px;
+    background: #F7F9FF;
+    margin-top: 24px;
+}
+
+.music-icon {
+    width: 48px;
+    height: 48px;
+    background: url(images/icon-music.svg);
+}
+
+.music-card-container h3 {
+    font-size: 19px;
+    color: #1F2E55;
+    line-height: 18.52px;
+    font-weight: 900;
+}
+
+.music-card-container p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18.52px;
+    line-break: 70px;
+}
+
+.price-plan {
+    display: flex;
+    flex-direction: column;
+}
+
+.price-plan p {
+    margin-top: 3px;
+    margin-right: 50px;
+}
+
+.payment-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 279px;
+    height: 50px;
+    border-radius: 11px;
+    background: #382AE1;
+    color: #FFFFFF;
+    margin-top: 24px;
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.payment-button h2 {
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 19.85;
+}
+
+.cancel-button p {
+    font-size: 15px;
+    font-weight: 900;
+    margin-top: 24px;
+    color: #717FA6;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+@media only screen and (min-width:375) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1440px;
+        height: 900px;
+        max-width: 100%;
+    }
 }
