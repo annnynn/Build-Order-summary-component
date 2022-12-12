@@ -2,6 +2,8 @@
 
 #overview
 - in this challange i created Order Summary Component, only for mobile and dekstop resolution. i used mobile-first technique.
+- Dekstop (1440px900px)
+- Mobile (375px709px)
 
 #my-process
 - in process i had a little hard time with mediaquery, although, fixed it. it took 1.5 day.
